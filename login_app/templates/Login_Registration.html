@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login and Registration</title>
+        <meta charset="UTF-8">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="{% static 'js/script.js' %}"></script>
+    
+    </head>
+
+    <body>
+        <div class="containar">
+            <div class="header">
+
+            </div>
+            <div class="msg_box">
+                {% if messages %}
+                <ul class="messages" id="msg">    
+                    {% for message in messages %}    
+                        <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                </div>
+            <div class="box1">
+                <h1>Registration</h1>
+                <form action="/register" method='post' name="register">
+                    <table >
+                    {% csrf_token %}
+                        <tr>
+                            <td><label >First Name: </label></td>
+                            <td><input type="text"  name="first_name" ></td>
+                        </tr>
+                        <tr>
+                            <td><label >Last Name: </label></td>
+                            <td><input type="text"  name="last_name" ></td>
+                        </tr>
+                        <tr>
+                            <td><label >Email: </label></td>
+                            <td><input type="text"  name="email" ></td>
+                        </tr>
+                        <tr>
+                            <td><label >Birthday: </label></td>
+                            <td><input type="date"  name="birthday" ></td>
+                        </tr>
+                        <tr>
+                            <td><label >Password: </label></td>
+                            <td><input type="password"  name="password" ></td>
+                        </tr>
+                        <tr>
+                            <td><label >Confirm PW: </label></td>
+                            <td><input type="password"  name="confirm_pass" ></td>
+                        </tr>
+                        
+                        <tr>
+                            <td ><button id="check">Register</button></td>
+                        </tr>
+
+                    </table>
+                </form>
+
+                
+            </div>
+
+
+
+            <div class="box2">
+                <h1>Login</h1>
+                <form action="/login" method='post'>
+                    <table >
+                    {% csrf_token %}
+                        <tr>
+                            <td><label >Email: </label></td>
+                            <td><input type="text"  name="email"></td>
+                        </tr>
+                        <tr>
+                            <td><label >Password: </label></td>
+                            <td><input type="password"  name="password"></td>
+                        </tr>
+                        <tr>
+                            <td ><button>Log In</button></td>
+                        </tr>
+
+                    </table>
+                </form>
+
+
+        </div>
+    </body>
+</html>

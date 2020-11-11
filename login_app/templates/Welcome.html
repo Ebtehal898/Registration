@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome</title>
+        <meta charset="UTF-8">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+
+
+    </head>
+
+    <body>
+        <div class="containar">
+            <div class="header">
+            </div>
+            
+            <div class="link1"><a href="/reset"> Log Out</a></div>
+
+            <div class="box1">
+                <h2> Success! Welcome, {{ user_name }}</h2>
+                <h3>Successfully registered (or logged in)!</h3>
+                
+            </div>
+        
+        </div>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+body{
+    margin: 0px;
+    }
+
+    .containar {
+        width: 1200px;
+        min-height: 720px;
+        margin: 0px auto;
+        font-family: Georgia;
+        background-color: #F9F9F9;
+        box-shadow: 0px 10px 10px 3px #888888;
+
+        
+    }
+    .header {
+        width: 1200px;
+        height: 100px;
+        background-color: #002752;
+        color: white;
+    }
+
+    .msg_box{
+        margin-left: 80px;
+        margin-top: 20px;
+        width: 1100px;
+        height: 90px;
+    }
+    /* ul {
+        padding-left: 10px;
+    } */
+
+        .box1{
+            width: 450px;
+            height: 500px;
+            margin: 0px auto;
+            margin-left: 100px;
+            margin-top: 5px;
+            /* border: 1px dotted red; */
+            color: #002752;
+            display: inline-block;
+
+        }
+
+        table{
+            width: 100px;
+            text-align: left;
+            margin-top: 35px;
+            /* border: 1px dotted blue; */
+
+        }
+
+
+        label{
+            font-weight: bold;
+            text-align: left;
+            margin-top: 10px;
+            color: #002752;
+            display: inline-block;
+
+        }
+
+        input[type=text]{
+            width: 200px;
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: left;
+
+        }
+        input[type=password]{
+            width: 200px;
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: left;
+
+        }
+        input[type=date]{
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: left;
+            height: 30px;
+            width: 203px;
+        }
+
+        button {
+            width: 100px;
+            height: 35px;
+            margin-left: 30px;
+            font-weight: bold;
+            font-family: Georgia;
+            margin-top:40px;
+            cursor: pointer;
+            background-color: #f1f1f1;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        button:hover {
+            background-color: gray;
+            color: white;
+        }
+
+
+        #msg{
+            color:#B60E2F;
+        }
+
+        .box2{
+            width: 450px;
+            min-height: 500px;
+            margin-left: 160px;
+            margin-top: 5px;
+            color: #002752;
+            /* border: 1px dotted red; */
+            text-align: left;
+            display: inline-block;
+        }
